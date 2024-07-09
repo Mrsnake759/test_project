@@ -1,0 +1,424 @@
+body {
+  background-image: url("assets/BG.png");
+  color: white;
+}
+
+.container {
+  margin: 50px 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+.header_links {
+  color: white;
+  display: flex;
+  gap: 26px;
+}
+
+.header_profile {
+  display: flex;
+  gap: 15px;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.main_img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_button {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: #CF4044;
+}
+
+.about {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 170px;
+}
+
+.about_left {
+  display: grid;
+}
+
+.about_left-text {
+  font-weight: bold;
+  color: #CF4044;
+}
+
+.about_left-img {
+  display: flex;
+  justify-self: center;
+}
+
+.about_center {
+  width: 650px;
+}
+
+.about_center-text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about_center-link {
+  color: #CF4044;
+}
+
+.catalog {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.catalog_left {
+  font-weight: bold;
+  color: #CF4044;
+}
+
+.catalog_right {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.catalog_button {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: #CF4044;
+}
+
+/*@media (min-width: 800px) {*/
+/*  .catalog_wrapper {*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*  }*/
+/*}*/
+
+@media (min-width: 1280px) {
+  .catalog_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+.sale {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sale_table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.sale_table-item_img {
+  width: 100%;
+}
+
+.sale_table-item_text {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.sale_button {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: #CF4044;
+}
+
+.sale-title {
+  text-decoration: line-through;
+}
+
+.sale_subtitle {
+  margin-left: 10px;
+  color: #CF4044;
+  text-decoration: none;
+}
+
+.sale-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 1280px) {
+  .sale_table {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.nuture {
+  color: white;
+  height: 490px;
+  margin-top: 150px;
+  background-image: url("assets/nuture/background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nuture_title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.nuture_subtitle {
+  margin-top: 35px;
+  font-size: 20px;
+  max-width: 850px;
+  text-align: center;
+}
+
+.collab {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.collab_title {
+  color: #CF4044;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.collab_list {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.collab_text-1 {
+  text-align: center;
+}
+
+.collab_text-2 {
+  text-align: start;
+}
+
+.collab_text-3 {
+  text-align: end;
+}
+
+.collab_text-4 {
+  text-align: center;
+}
+
+.collab_text-5 {
+  text-align: start;
+}
+
+.collab_text-6 {
+  text-align: end;
+}
+
+
+@media (min-width: 1280px) {
+  .collab_list {
+    font-size: 96px;
+  }
+}
+
+.faq {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq_wrapper-link {
+  border: 1px solid #CF4044;
+  text-align: start;
+  padding-left: 10px;
+  color: white;
+  font-size: 18px;
+  background-image: url("assets/BG.png");
+  height: 40px;
+  width: 150px;
+}
+
+.accordion {
+  /*margin-bottom: 200px;*/
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #CF4044;
+}
+
+.accordion-header {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.accordion-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  font-size: 18px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.accordion-content.open {
+  padding-top: 10px; /* добавим верхний отступ для открытого состояния */
+}
+
+@media (min-width: 1280px) {
+  .accordion-content {
+    width: 50%;
+  }
+}
+
+.footer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 100px;
+  height: 25px;
+  margin-bottom: 40px;
+}
+
+.footer_table {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+
+.footer_table-item {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link:hover {
+  color: #CF4044;
+}
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_table-item-link {
+  border: 1px solid white;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 20px;
+}
+
+.footer_right {
+   display: flex;
+  flex-direction: column;
+}
+
+.footer_right-title {
+  color: #CF4044;
+  font-size: 20px;
+}
+
+.footer_right-check {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.text-field__input {
+  width: 270px;
+  height: 30px;
+  padding-left: 10px;
+  color: white;
+  border: 1px solid rgba(177, 177, 177, 1);
+  margin-top: 20px;
+  background-image: url("assets/BG.png");
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    flex-direction: row;
+  }
+
+
+  .footer_table {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
