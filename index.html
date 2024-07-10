@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1">
   <title>Test-project</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,12 +11,37 @@
 
     <section class="header">
       <img class="header_logo" src="assets/Logo.png" alt="">
+      <div class="header_wrapper">
+        <img class="header_profile-button" src="assets/Search.png" alt="Поиск">
+        <div class="burger" id="burger">&#9776;</div>
+      </div>
+      <div class="menu" id="menu">
+        <span class="close" id="close">&times;</span>
+        <img class="logo" src="assets/Logo.png" alt="">
+        <nav>
+          <ul>
+            <li><a href="#">CATALOG</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">SALE</a></li>
+          </ul>
+        </nav>
+        <div class="menu-button">
+          <button class="news-button">
+            <a class="news-link" href="#">Creat account</a>
+          </button>
+          <button class="menu-button-1">Sign in</button>
+        </div>
+        <div class="language">English (US)</div>
+      </div>
+
       <div class="header_links">
-        <div>Catalog</div>
-        <div>About</div>
-        <div>Blog</div>
-        <div>Faq</div>
-        <div>Sale</div>
+        <div class="header-link">Catalog</div>
+        <div class="header-link">About</div>
+        <div class="header-link">Blog</div>
+        <div class="header-link">Faq</div>
+        <div class="header-link">Sale</div>
       </div>
       <div class="header_profile">
           <img class="header_profile-button" src="assets/Search.png" alt="Поиск">
@@ -25,69 +51,186 @@
           <img class="header_profile-button" src="assets/Account.png" alt="Профиль">
       </div>
     </section>
+  </div>
 
     <section class="main">
-      <img class="main_img" src="assets/Main.png" alt="Главный баннер">
+      <div class="test">
+        <img class="main_img" src="assets/main_mobile.png" alt="Главный баннер">
+        <img class="main_imgB" src="assets/Main.png" alt="Главный баннер">
+      </div>
       <button class="main_button">CATALOG</button>
     </section>
+  <div class="container">
+    <section class="about">
+      <div class="about_left">
+        <h2 class="about_left-text">ABOUT</h2>
+        <img class="about_left-img1" src="assets/about/Img_4.png" alt="">
+        <img class="about_left-img2" src="assets/about/Img_1.png"  alt="">
+      </div>
+      <div class="about_center">
+        <img class="about_center-img" src="assets/about/img_2-mobile.png" alt="">
+        <img class="about_center-imgM" src="assets/about/img_2-middle.png" alt="">
+        <img class="about_center-imgB" src="assets/about/img2_big.png" alt="">
+        <div class="about_center-text">
+          <div class="about-text">For the past three decades, Element has built an evolving family of team riders who are more than just skaters. They are advocates and ambassadors who embody what Element stands for. With a mix of skaters from those who redefined the game years ago to a new generation of some the most creative talents around, the Element team is helping to usher us into a new and exciting era.</div>
+          <div class="about-text-2">Skateboarding is our life and being close to nature is our culture. We are aiming to become the world's leading sustainable skateboard brand, constantly contributing to our community and fighting for the protection of the planet. Through this vision we aim to be a guiding light in skateboarding for the next thirty years, just as when we started thirty years ago.</div>
+        </div>
+        <button class="about_center-button">
+          <a class="about_center-link" href="#">READ MORE</a>
+        </button>
+      </div>
+            <div class="about_right">
+              <img class="about_right-img1" src="assets/about/Img_3-middle.png" alt="">
+              <img class="about_right-img2" src="assets/about/Img_4.png" alt="">
+            </div>
+    </section>
 
-<!--    <section class="about">-->
-<!--      <div class="about_left">-->
-<!--        <h2 class="about_left-text">ABOUT</h2>-->
-<!--        <img class="about_left-img" src="assets/about/Img_1.png" alt="">-->
-<!--      </div>-->
-<!--      <div class="about_center">-->
-<!--        <img src="assets/about/Img_2.png" alt="">-->
-<!--        <div class="about_center-text">-->
-<!--          <div class="about-text">For the past three decades, Element has built an evolving family of team riders who are more than just skaters. They are advocates and ambassadors who embody what Element stands for. With a mix of skaters from those who redefined the game years ago to a new generation of some the most creative talents around, the Element team is helping to usher us into a new and exciting era.</div>-->
-<!--          <div class="about-text">Skateboarding is our life and being close to nature is our culture. We are aiming to become the world's leading sustainable skateboard brand, constantly contributing to our community and fighting for the protection of the planet. Through this vision we aim to be a guiding light in skateboarding for the next thirty years, just as when we started thirty years ago.</div>-->
-<!--        </div>-->
-<!--        <a class="about_center-link" href="#">READ MORE</a>-->
-<!--      </div>-->
-<!--      <div class="about_right">-->
-<!--        <img src="assets/about/Img_3.png" alt="">-->
-<!--        <img src="assets/about/Img_4.png" alt="">-->
-<!--      </div>-->
-<!--    </section>-->
+    <section class="catalogM">
+      <h2 class="about_left-text">CATALOG</h2>
+      <div class="catalogM-wrapper">
+
+        <div class="catalogMiddle_table">
+          <div class="catalogM_table-item">
+            <img class="item-img" src="assets/catalog/img1_middle.png" alt="">
+            <img class="catalogMiddle_table-img" src="assets/catalog/img1_big.png" alt="">
+            <div class="catalogM_table-item_text">Clothing</div>
+          </div>
+          <div class="catalogM_table-item">
+            <img class="item-img" src="assets/catalog/img2_middle.png" alt="">
+            <img class="catalogMiddle_table-img" src="assets/catalog/img2_big.png" alt="">
+            <div class="catalogM_table-item_text">Accessories</div>
+          </div>
+          <div class="catalogM_table-item">
+            <img class="item-img" src="assets/catalog/img3_middle.png" alt="">
+            <img class="catalogMiddle_table-img" src="assets/catalog/img3_big.png" alt="">
+            <div class="catalogM_table-item_text">Skate</div>
+          </div>
+        </div>
+
+        <div class="catalogM_table">
+          <div class="catalogM_table-wrapper">
+            <div class="catalogM_table-item">
+              <img src="assets/catalog/img1_mobile.png" alt="">
+              <div class="catalogM_table-item_text">Clothing</div>
+            </div>
+            <div class="catalogM_table-item">
+              <img src="assets/catalog/img2_mobile.png" alt="">
+              <div class="catalogM_table-item_text">Accessories</div>
+            </div>
+          </div>
+          <div class="catalogM_table-item">
+            <img src="assets/catalog/img3_mobile.png" alt="">
+            <div class="catalogM_table-item_text">Skate</div>
+          </div>
+        </div>
+        <button class="main_button">CATALOG</button>
+      </div>
+    </section>
 
     <section class="catalog">
       <div class="catalog_wrapper">
         <h2 class="catalog_left">CATALOG</h2>
         <img class="catalog_center" src="assets/catalog/Skateboard.png" alt="">
         <div class="catalog_right">
-          <div>Accessories</div>
-          <div>Clothing</div>
-          <div>Skateboards</div>
-          <div>Flat bars & Rails</div>
-          <div>Trucks & Wheels</div>
+          <div class="catalog_item">Accessories</div>
+          <div class="catalog_item">Clothing</div>
+          <div class="catalog_item">Skateboards</div>
+          <div class="catalog_item">Flat bars & Rails</div>
+          <div class="catalog_item">Trucks & Wheels</div>
         </div>
       </div>
       <button class="catalog_button">CATALOG</button>
     </section>
 
-<!--    <section class="news">-->
-<!--      <div class="news_header">-->
-<!--        <div class="news_header-text">-->
-<!--          <span class="news-text">NEWS</span> FEATURES EVENTS-->
-<!--        </div>-->
-<!--        <button class="news_header-button">Subscribe to the newsletter</button>-->
-<!--      </div>-->
-<!--      <div class="news_table">-->
-<!--        <div></div>-->
-<!--        <div></div>-->
-<!--        <div></div>-->
-<!--        <div></div>-->
-<!--        <div></div>-->
-<!--      </div>-->
-<!--      <button class="news_button">ALL NEWS</button>-->
-<!--    </section>-->
+    <section class="news">
+      <div class="news_header">
+        <div class="news_header-text">
+          <span class="news-text">NEWS</span> EVENTS
+        </div>
+        <button class="news_header-button">Subscribe</button>
+      </div>
+      <div class="news_wrapper1">
+        <div class="news_wrapper1-item">
+          <div class="card_tag">culture</div>
+          <div class="card_text">Element becomes a member of the WWF club «Engage for the Planet»</div>
+          <div class="card_date">11.04.23</div>
+          <div class="news_wrapper1-text">Starting in 2023, Element will be an official member of «Engage for the Planet», the French-based affiliate of the World Wildlife Fund.</div>
+        </div>
+        <div  class="news_wrapper1-item">
+          <div class="card_tag">culture</div>
+          <div class="card_text">ELEMENT + PELAGO</div>
+          <div class="card_date">11.04.23</div>
+          <div class="news_wrapper1-text">Element skateboards and Pelago Bicycles have come together to launch a collection of equipment and apparel that taps into the shared energy that exists between skateboarding and riding bikes. The roots of both brands, Pelago and Element come from the same soil - nature, art and skateboarding. So, it was only fitting that we combined our passions to create a capsule with the purpose of living out local adventures in the most sustainable way possible.</div>
+        </div>
+        <div  class="news_wrapper1-item block">
+          <div class="card_tag">culture</div>
+          <div class="card_text">ELEMENT + PELAGO</div>
+          <div class="card_date">11.04.23</div>
+          <div class="news_wrapper1-text">Enter the second edition of the #elementroundearthflatbar challenge for your chance to win your own Element flatbar.</div>
+        </div>
+      </div>
+      <div class="news_wrapper">
+        <div class="card">
+          <img class="card_img news-img1" src="assets/news/img1_middle.png" alt="">
+          <img class="card_img news-img" src="assets/news/img1_big.png" alt="">
+          <div class="card_tag">culture</div>
+          <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+          <div class="card_date">11.04.23</div>
+        </div>
+        <div class="card">
+          <img class="card_img" src="assets/news/img2_middle.png" alt="">
+          <div class="card_tag">culture</div>
+          <div class="card_text">ELEMENT X BISOUS</div>
+          <div class="card_date">11.04.23</div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider-container">
+          <div class="card">
+            <img class="card_img" src="assets/catalog/img_slider.png" alt="">
+            <div class="card_tag">culture</div>
+            <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+            <div class="card_date">11.04.23</div>
+          </div>
+          <div class="card">
+            <img class="card_img" src="assets/catalog/img_slider.png" alt="">
+            <div class="card_tag">culture</div>
+            <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+            <div class="card_date">11.04.23</div>
+          </div>
+          <div class="card">
+            <img class="card_img" src="assets/catalog/img_slider.png" alt="">
+            <div class="card_tag">culture</div>
+            <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+            <div class="card_date">11.04.23</div>
+          </div>
+          <div class="card">
+            <img class="card_img" src="assets/catalog/img_slider.png" alt="">
+            <div class="card_tag">culture</div>
+            <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+            <div class="card_date">11.04.23</div>
+          </div>
+          <div class="card">
+            <img class="card_img" src="assets/catalog/img_slider.png" alt="">
+            <div class="card_tag">culture</div>
+            <div class="card_text">VITÓRIA MENDONÇA TURNS PRO FOR ELEMENT</div>
+            <div class="card_date">11.04.23</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="news-button">
+        <a class="news-link" href="#">ALL NEWS</a>
+      </button>
+    </section>
 
     <section class="sale">
+      <h2 class="about_left-text">SALE</h2>
       <div class="sale_table">
         <div class="sale_table-item">
           <img class="sale_table-item_img" src="assets/sale/picture1.png" alt="">
           <div class="sale_table-item_text">
-            <div>Hirotton Leopard Hoodie</div>
+            <div class="sale-text">Hirotton Leopard Hoodie</div>
             <div class="sale-wrapper">
               <div class="sale-title">89 </div>
               <span class="sale_subtitle">$71.99</span>
@@ -99,7 +242,7 @@
         <div class="sale_table-item">
           <img class="sale_table-item_img" src="assets/sale/picture2.png" alt="">
           <div class="sale_table-item_text">
-            <div>Blazin' Short Sleeve T-Shirt</div>
+            <div class="sale-text">Blazin' Short Sleeve T-Shirt</div>
             <div class="sale-wrapper">
               <div class="sale-title">89 </div>
               <span class="sale_subtitle">$71.99</span>
@@ -111,7 +254,7 @@
         <div class="sale_table-item">
           <img class="sale_table-item_img" src="assets/sale/picture3.png" alt="">
           <div class="sale_table-item_text">
-            <div>Alder Jacket</div>
+            <div class="sale-text">Alder Jacket</div>
             <div class="sale-wrapper">
               <div class="sale-title">89 </div>
               <span class="sale_subtitle">$71.99</span>
@@ -123,7 +266,7 @@
         <div class="sale_table-item">
           <img class="sale_table-item_img" src="assets/sale/picture4.png" alt="">
           <div class="sale_table-item_text">
-            <div>Lake Sherpa Vest</div>
+            <div class="sale-text">Lake Sherpa Vest</div>
             <div class="sale-wrapper">
               <div class="sale-title">89 </div>
               <span class="sale_subtitle">$71.99</span>
@@ -132,7 +275,7 @@
           <div></div>
         </div>
 
-        <div class="sale_table-item">
+        <div class="sale_table-item sale_1">
           <img class="sale_table-item_img" src="assets/sale/picture5.png" alt="">
           <div class="sale_table-item_text">
             <div>Smokey Bear x Element Poster...</div>
@@ -144,7 +287,7 @@
           <div></div>
         </div>
 
-        <div class="sale_table-item">
+        <div class="sale_table-item sale_2">
           <img class="sale_table-item_img" src="assets/sale/picture6.png" alt="">
           <div class="sale_table-item_text">
             <div>Cornell Classic Hoodie</div>
@@ -156,7 +299,7 @@
           <div></div>
         </div>
 
-        <div class="sale_table-item">
+        <div class="sale_table-item sale_3">
           <img class="sale_table-item_img" src="assets/sale/picture7.png" alt="">
           <div class="sale_table-item_text">
             <div>Component Bundle 5.5» Trucks</div>
@@ -168,7 +311,7 @@
           <div></div>
         </div>
 
-        <div class="sale_table-item">
+        <div class="sale_table-item sale_4">
           <img class="sale_table-item_img" src="assets/sale/picture8.png" alt="">
           <div class="sale_table-item_text">
             <div>Seal Skateboard Deck</div>
@@ -182,14 +325,12 @@
       </div>
       <button class="sale_button">CATALOG</button>
     </section>
-  </div>
 
-  <section class="nuture">
-    <div class="nuture_title">CONSCIOUS BY NUTURE</div>
-    <div class="nuture_subtitle">Element is committed to reducing its environmental impact by continuously improving how its products are made. Here you will find all of our garments containing preferred fibers that have a lower environmental impact, such as organic cotton and recycled rubber.</div>
-  </section>
+    <section class="nuture">
+      <div class="nuture_title">CONSCIOUS BY NUTURE</div>
+      <div class="nuture_subtitle">Element is committed to reducing its environmental impact by continuously improving how its products are made. Here you will find all of our garments containing preferred fibers that have a lower environmental impact, such as organic cotton and recycled rubber.</div>
+    </section>
 
-  <div class="container">
     <section class="collab">
       <h2 class="collab_title">collaboration</h2>
       <div class="collab_list">
@@ -204,7 +345,7 @@
 
     <section class="faq">
       <div class="faq_wrapper">
-        <h2 class="collab_title">FAQ</h2>
+        <h2 class="about_left-text test">FAQ</h2>
         <button class="faq_wrapper-link">All questions</button>
       </div>
       <div class="accordion">
@@ -316,7 +457,23 @@
       </div>
     </section>
 
-    
+    <section class="instagram">
+      <div class="news_header-text">
+        INSTAGRAM   <span class="news-text">@ELEMENT</span>
+      </div>
+      <div class="instagram_table">
+        <div class="instagram_wrapper">
+          <img class="instagram_wrapper-1" src="assets/instagram/img1_mobile.png" alt="">
+          <img class="instagram_wrapper-2" src="assets/instagram/img2_mobile.png" alt="">
+        </div>
+        <img src="assets/instagram/img3_mobile.png" alt="">
+      </div>
+
+      <button class="about_center-button instagram-button">
+        <a class="about_center-link" href="#">SUBSCRIBE</a>
+      </button>
+    </section>
+
     <section class="footer">
       <img class="footer_logo" src="assets/Logo.png" alt="logo">
       <div class="footer_table">
@@ -367,6 +524,22 @@
       </div>
     </section>
   </div>
+
+
+
+
+<!--  </div>-->
+
+
+
+<!--  <div class="container">-->
+
+
+
+
+<!--    -->
+
+<!--  </div>-->
 
   <script src="script.js"></script>
 
